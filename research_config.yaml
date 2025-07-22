@@ -1,0 +1,21 @@
+model_provider: "mistral"
+model_name: "mistral-medium-2505"
+max_token_budget: 100_000
+top_k_urls_rerank: 20
+reflect_step:
+  max_decomposition_questions: 3
+search_step:
+  max_questions_to_search: 3
+  top_k_search_results: 5
+visit_step:
+  max_urls_to_visit: 5
+answer_step:
+  max_bad_attempts: 2
+semantic_similarity:
+  batch_size: 32
+  max_length: 512
+snippet_extraction:
+  chunk_size: 400
+  num_snippets: 3
+  snippet_length: 800
+  min_similarity: 0.3

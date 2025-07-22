@@ -1,0 +1,17 @@
+Think step by step through the following and output your evaluation:
+<context>
+{% for item in knowledge_items %}
+<context-item-{{ loop.index }}>
+<question> {{ item.question }} </question>
+<answer> {{ item.answer }} </answer>
+</context-item-{{ loop.index }}>
+{% endfor %}
+</context>
+
+<question>
+{{question}}
+</question>
+
+<answer>
+{{answer}}
+</answer>

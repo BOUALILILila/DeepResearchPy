@@ -1,0 +1,12 @@
+My original search query is: "{{query}}"
+
+My motivation is: {{think}}
+
+So I briefly googled "{{query}}" and found some soundbites about this topic, hope it gives you a rough idea about my context and topic:
+<random-soundbites>
+{% for result in search_results %}
+- {{ result }}
+{% endfor %}
+</random-soundbites>
+
+Given those info, generate the best effective queries
